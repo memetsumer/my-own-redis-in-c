@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C Debug with LLDB",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/my_program", // Update to your executable name
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "build"
+    }
+  ]
+}

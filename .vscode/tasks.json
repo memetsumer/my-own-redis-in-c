@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "main.c", // Add all source files here
+        "hash_table.c", // Include "hash_table.c"
+        "prime.c", // Include "prime.c"
+        "-o",
+        "my_program" // Specify the desired output executable name
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
